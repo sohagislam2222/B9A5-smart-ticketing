@@ -48,7 +48,7 @@ for (const seat of seats) {
 
       const phone = document.getElementById('input-mobile').value;
 
-      if (count > 0 && phone.length >= 0) {
+      if (count > 0 && phone.length > 0) {
         const buttonNext = document.getElementById('next-button');
         buttonNext.removeAttribute('disabled', true);
         if (count === 4) {
