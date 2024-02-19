@@ -10,16 +10,16 @@ for (const seat of seats) {
     count++;
     seatAvailable = seatAvailable - 1;
     const seatName = seat.querySelector('span').innerText;
-    const seatAdded = showElementById('seat-added');
+    showElementById('seat-added');
 
 
 
 
     if (count <= 4) {
 
-      const newBg = document.getElementById(seatName).classList.add('bg-[#1DD100]');
+      document.getElementById(seatName).classList.add('bg-[#1DD100]');
 
-      const Bg = document.getElementById(seatName).classList.remove('bg-[#F7F8F8]');
+      document.getElementById(seatName).classList.remove('bg-[#F7F8F8]');
 
       totalPrice = ticketPrice * count;
       grandTotal = ticketPrice * count;
@@ -27,8 +27,7 @@ for (const seat of seats) {
       document.getElementById('total-price').innerText = totalPrice;
       document.getElementById('grand-total').innerText = grandTotal;
 
-      const totalSelectedSeat = setInnerTextById('seat-count', count);
-      const totalSeatAvailable = setInnerTextById('available-seat', seatAvailable);
+
       const li = document.createElement('li');
       const d1 = document.createElement('div');
       d1.innerText = seatName;
@@ -45,7 +44,8 @@ for (const seat of seats) {
       seatAddedDiv.appendChild(li);
       const selected = seatAddedDiv.childNodes[1].childNodes[0].innerText;
       seat.setAttribute('disabled', '');
-
+      setInnerTextById('seat-count', count);
+      setInnerTextById('available-seat', seatAvailable);
 
       const phone = document.getElementById('input-mobile');
       phone.addEventListener('keyup', function () {
@@ -211,22 +211,3 @@ function allClose() {
 
 
 
-// const title = card.querySelector('h3').innerText;
-
-// const price = card.querySelector('span').innerText.split(' ')[1];
-
-// const itemsContainer = document.getElementById('title-container');
-
-// const p = document.createElement('p');
-// p.innerText = count + '.' + title + ':' + price;
-
-// itemsContainer.appendChild(p);
-
-// const totalPrice1 = document.getElementById('totalPrice');
-
-// totalPrice = totalPrice + parseFloat(price);
-
-// totalPrice1.innerText = totalPrice;
-
-// const total = document.getElementById('total');
-// total.innerText = totalPrice;

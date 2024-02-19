@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P-Paribahon</title>
+  <title>SR-Paribahon</title>
 
   <!-- Tailwind and DaisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -15,6 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="shortcut icon" href="images/bus-icon.png" type="image/x-icon">
 
   <style>
     * {
@@ -63,7 +64,7 @@
             </ul>
           </div>
           <div class=" flex justify-start">
-            <a class="btn btn-ghost text-2xl font-extrabold   lg:text-4xl">P-Ticket</a>
+            <a class="btn btn-ghost text-2xl font-extrabold   lg:text-4xl">Smart-Ticket</a>
           </div>
         </div>
         <div class="navbar-center hidden md:block lg:block  ">
@@ -94,7 +95,7 @@
           <div class="text-5xl lg:text-6xl font-extrabold text-white mt-4 lg:mt-10">
             End-to-End Travel with
           </div>
-          <div class=" text-4xl lg:text-6xl font-extrabold text-white mt-4 lg:mt-10"><span class="text-[#1DD100]">P
+          <div class=" text-4xl lg:text-6xl font-extrabold text-white mt-4 lg:mt-10"><span class="text-[#1DD100]">SR
               Paribahan</span>
           </div>
 
@@ -169,7 +170,7 @@
     <!-- OFFERS SECTION -->
 
     <section class="max-w-[81.25%] m-auto">
-      <div class="text-4xl font-bold font-rail text-center text-black mt-5 lg:pt-24">
+      <div class="text-4xl font-bold font-rail text-center pt-10 text-black mt-5 lg:pt-24">
         Best offers for you
       </div>
 
@@ -242,7 +243,7 @@
       <div class="w-[81.25%] mx-auto">
         <div class="pt-5 lg:pt-24">
           <div class="text-4xl  font-bold font-rail text-center text-black ">
-            P.H Paribahan
+            S.R Paribahan
           </div>
           <div class="text-center text-lg">
             Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing
@@ -492,7 +493,7 @@
           <div class=" w-full lg:w-[40%] md:border-l-2 lg:border-l-2 lg:border-dashed lg:border-gray-500">
 
 
-            <div class="text-2xl font-semibold font-rail">
+            <div class="text-2xl ml-3 font-semibold font-rail">
               Select Your Seat
             </div>
 
@@ -538,12 +539,13 @@
 
               <!-- Coupon Input Field -->
 
-              <div id="coupon-container" class="w-full mt-4 gap-4 lg:gap-0 flex flex-col lg:flex-row">
+              <div id="coupon-container" class="w-full  mt-4 gap-4 lg:gap-0 flex flex-col lg:flex-row">
 
                 <input id="coupon-input-field"
-                  class="p-3 py-4 rounded-2xl lg:rounded-l-2xl input-bordered bg-white  w-full "
+                  class="p-3 py-4 md:rounded-l-2xl lg:rounded-l-2xl input-bordered bg-white  w-full "
                   placeholder="Have any coupon?" disabled />
-                <button id="apply-button" class="px-2 py-4 rounded-2xl lg:rounded-r-2xl  border-2 font-bold " disabled>
+                <button id="apply-button" class="px-2 py-4 md:rounded-r-2xl  lg:rounded-r-2xl  border-2 font-bold "
+                  disabled>
                   Apply
                 </button>
 
@@ -596,7 +598,7 @@
                   <div class="modal-action">
                     <form method="dialog">
                       <!-- if there is a button, it will close the modal -->
-                      <button onclick="allClose()" class="btn px-10 bg-[#27AE60]">Continue</button>
+                      <button onclick="allClose()" class="btn px-10 bg-[#1DD100]">Continue</button>
                     </form>
                   </div>
                 </div>
@@ -634,10 +636,10 @@
       <div class="flex w-full flex-col md:flex-row lg:flex-row justify-between items-center pt-5 lg:pt-28">
         <div class="flex justify-between flex-col items-center lg:items-start ">
           <div class="text-4xl font-extrabold  font-rail text-white font-rail">
-            P-Ticket
+            Smart-Ticket
           </div>
           <div class="text-lg text-center lg:text-left text-white font-inter">
-            P-Ticket is a digital platform to make your <br> daily commuting better.
+            Smart-Ticket is a digital platform to make your daily commuting better.
           </div>
         </div>
 
@@ -668,7 +670,7 @@
         <div class=" text-white text-center lg:text-left">
           @all rights reserved, P-Ticket services limited.2024
         </div>
-        <div class="flex justify-between gap-10 lg:gap-5 items-center text-white ">
+        <div class="flex flex-col md:flex-row lg:flex-row justify-between gap-5 items-center text-white ">
           <div>Terms & condition</div>
           <div>Return & refund policy</div>
           <div>Privacy policy</div>
