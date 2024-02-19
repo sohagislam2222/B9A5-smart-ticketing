@@ -52,8 +52,10 @@ for (const seat of seats) {
         const phoneNum = phone.value.length;
         if (totalPrice >= 550 && phoneNum > 0) {
           const buttonNext = document.getElementById('next-button');
-          console.log(buttonNext);
           buttonNext.removeAttribute('disabled', true);
+          buttonNext.classList.add('bg-[#1DD100]');
+          buttonNext.classList.add('text-white');
+
         }
       })
 
@@ -63,14 +65,12 @@ for (const seat of seats) {
         buttonApply.removeAttribute('disabled', true);
         const couponField = document.getElementById('coupon-input-field');
         couponField.removeAttribute('disabled', true);
-
+        document.getElementById('apply-button').classList.add('bg-[#1DD100]');
+        document.getElementById('apply-button').classList.add('text-white');
 
       }
-
-
-
-
     }
+
 
     else {
       alert('You can  buy only 04 tickets at time')
@@ -78,12 +78,6 @@ for (const seat of seats) {
   })
 
 }
-
-
-
-
-
-
 
 
 
@@ -131,7 +125,8 @@ applyButton.addEventListener('click', function () {
 
   const couponCode = document.getElementById('coupon-input-field');
 
-  const couponText = couponCode.value.split(' ').join('').toUpperCase();
+  const couponText = couponCode.value;
+
 
 
 
@@ -152,7 +147,7 @@ applyButton.addEventListener('click', function () {
 
 
     }
-    else if (couponText === 'COUPLE20') {
+    else if (couponText === 'Couple 20') {
       const grandTotal1 = document.getElementById('grand-total');
 
       const discount = document.getElementById('total-discount');
@@ -198,22 +193,20 @@ function purchesConfirm() {
 
   }
   else {
-    alert('Please Select an Item.')
+    alert('Please Select an Item and give your phone number')
   }
 }
 
-// function allClose() {
-//   document.getElementById('total-price').innerText = '0';
-//   document.getElementById('grand-total').innerText = '0';
-//   document.getElementById('total-discount').innerText = '0';
-//   document.getElementById('seat-count').innerText = '0';
-//   document.getElementById('seat-added').innerText = '';
-//   document.getElementById('input-mobile').value = '';
-
-
-//   hideElementById('discount-hidden');
-//   hideElementById('seat-added');
-// }
+function allClose() {
+  document.getElementById('total-price').innerText = '0';
+  document.getElementById('grand-total').innerText = '0';
+  document.getElementById('total-discount').innerText = '0';
+  document.getElementById('seat-count').innerText = '0';
+  document.getElementById('seat-added').innerText = '';
+  document.getElementById('input-mobile').value = '';
+  hideElementById('discount-hidden');
+  hideElementById('seat-added');
+}
 
 
 

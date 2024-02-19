@@ -17,6 +17,12 @@
     rel="stylesheet">
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
     .font-inter {
       font-family: "Inter", sans-serif;
     }
@@ -48,11 +54,11 @@
               class=" text-base menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a> Home</a></li>
               <li>
-                <a>Shop</a>
+                <a>About</a>
 
               </li>
-              <li><a>News</a></li>
-              <li><a>Contact</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
 
             </ul>
           </div>
@@ -108,8 +114,9 @@
 
       <!-- banner progress-->
       <div
-        class="flex  flex-col justify-center items-center bottom-[-70px] sm:mt-5 lg:flex-row w-full  gap-5 lg:absolute ">
-        <div class="bg-slate-300 lg:bg-[#FFF] rounded-3xl flex gap-4 mt-5 p-8  border-b-2 border-b-[#1DD100] bg-center">
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center bottom-[-70px] sm:mt-5 left-36 w-full  gap-5 lg:absolute ">
+        <div
+          class="bg-slate-300 lg:bg-[#FFF] rounded-3xl flex justify-center items-center gap-4 mt-5 p-5 h-36 border-b-2 border-b-[#1DD100] bg-center">
           <div>
             <img src="images/people.png" alt="">
           </div>
@@ -123,7 +130,8 @@
           </div>
         </div>
 
-        <div class="bg-slate-300 lg:bg-[#FFF] rounded-3xl flex gap-4 mt-5 p-8  border-b-2 border-b-[#1DD100] bg-center">
+        <div
+          class="bg-slate-300 lg:bg-[#FFF] rounded-3xl flex justify-center items-center gap-4 mt-5 h-36 p-5  border-b-2 border-b-[#1DD100] bg-center">
           <div>
             <img src="images/ticket-cupon.png" alt="">
           </div>
@@ -137,7 +145,8 @@
           </div>
         </div>
 
-        <div class="bg-slate-300 lg:bg-[#FFF] rounded-3xl flex gap-4 mt-5 p-8  border-b-2 border-b-[#1DD100] bg-center">
+        <div
+          class="bg-slate-300 lg:bg-[#FFF] rounded-3xl flex justify-center items-center gap-4 mt-5 h-36 p-5   border-b-2 border-b-[#1DD100] bg-center">
           <div>
             <img src="images/stoppage.png" alt="">
           </div>
@@ -168,8 +177,8 @@
       <div class="flex flex-col lg:flex-row gap-10 lg:gap-5 mt-5 lg:mt-20">
         <div class="h-52 w-full">
           <div
-            class="flex w-full h-full justify-between items-center  rounded-3xl bg-[#FFBF0F] bg-no-repeat bg-center bg-[url(./images/cupon-devider.png)]">
-            <div class="p-4 lg:p-14">
+            class="flex w-full h-full justify-between items-center p-5  rounded-3xl bg-[#FFBF0F] bg-no-repeat bg-center bg-[url(./images/cupon-devider.png)]">
+            <div class="flex flex-col justify-center items-center p-5">
               <div class="text-2xl lg:text-4xl font-extrabold font-inter">
                 15% OFF
               </div>
@@ -181,7 +190,7 @@
               </div>
             </div>
 
-            <div class="font-rail p-4 lg:p-14">
+            <div class="font-rail flex flex-col justify-center items-center p-5">
               <div class="text-2xl lg:text-3xl font-bold ">
                 NEW15
               </div>
@@ -193,8 +202,8 @@
         </div>
         <div class="h-52 w-full">
           <div
-            class="flex w-full h-full justify-between items-center  rounded-3xl bg-[#F78C9C] bg-no-repeat bg-center bg-[url(./images/cupon-devider.png)]">
-            <div class="p-4 lg:p-14">
+            class="flex w-full h-full justify-between items-center p-5 rounded-3xl bg-[#F78C9C] bg-no-repeat bg-center bg-[url(./images/cupon-devider.png)]">
+            <div class="flex flex-col justify-center items-center p-5">
               <div class="text-2xl lg:text-4xl font-extrabold font-inter">
                 20% OFF
               </div>
@@ -207,7 +216,7 @@
               </div>
             </div>
 
-            <div class="font-rail p-4 lg:p-14">
+            <div class="font-rail flex flex-col justify-center items-center p-5">
               <div class="text-2xl lg:text-3xl font-bold ">
                 Couple 20
               </div>
@@ -221,7 +230,7 @@
       </div>
 
       <div class="w-full  flex justify-center">
-        <button class="btn font-rail mt-5 lg:mt-20  text-[#1DD100] font-bold border-gray-400 border-none">
+        <button class="btn font-rail mt-5 lg:mt-20  text-[#1DD100] font-bold border-gray-400 ">
           See All Offers
         </button>
       </div>
@@ -243,9 +252,9 @@
           </div>
         </div>
 
-        <div class=" flex flex-col lg:flex-row justify-between items-center  my-5 bg-white  rounded-3xl lg:my-24">
+        <div class=" flex flex-col md:flex-row lg:flex-row justify-between   my-5 bg-white  rounded-3xl lg:my-24">
 
-          <div class="p-4">
+          <div class="p-4 w-full lg:w-[70%]">
             <div class=" flex justify-between flex-col gap-4   lg:flex-row ">
               <div class="flex justify-center items-center ">
                 <div>
@@ -302,21 +311,21 @@
                   <div class="bg-[#0307120D] w-full lg:w-56 rounded-3xl p-5">Est. Time - 11 Hour</div>
                 </div>
               </div>
-
-
-
             </div>
           </div>
 
-          <div class="hidden lg:block">
+          <div class="hidden  h-full lg:block">
             <img class="h-full" src="images/info-devider.png" alt="">
           </div>
+          <div class="w-full lg:w-[20%] p-5 flex flex-col justify-center items-center">
 
-          <div class="font-rail p-4  flex flex-col justify-center items-center">
-            <div><img src="images/fare.png" alt=""></div>
-            <div class="text-2xl font-semibold">550 Taka
+
+            <div class="font-rail  flex flex-col justify-center items-center">
+              <div><img src="images/fare.png" alt=""></div>
+              <div class="text-2xl font-semibold">550 Taka
+              </div>
+              <div>Per Seat</div>
             </div>
-            <div>Per Seat</div>
           </div>
         </div>
       </div>
@@ -324,9 +333,10 @@
 
       <section class="max-w-[1440px] m-auto bg-[#F7F8F8]">
 
-        <div class="flex flex-col lg:flex-row w-[81.25%] bg-white mx-auto justify-between rounded-3xl  gap-10">
-          <div class=" w-full ">
-            <div class="rounded-3xl p-5  font-inter">
+        <div
+          class="flex flex-col md:flex-row lg:flex-row w-[81.25%] bg-white mx-auto justify-between rounded-3xl p-6  gap-10">
+          <div class="w-full lg:w-[58%] ">
+            <div class="rounded-3xl  font-inter">
 
               <div class="text-2xl font-semibold mt-5 font-rail">
                 Select Your Seat
@@ -348,16 +358,17 @@
             <div
               class="text-lg w-full mx-auto font-inter font-semibold flex justify-between items-center gap-2 lg:gap-0 mt-5">
               <button class="px-3 py-2 lg:px-7 lg:py-4 rounded-xl  flex justify-center items-center"></button>
-              <button class="seat lg:px-6 lg:py-4 rounded-xl bg-slate-500 flex justify-center items-center"><img
+              <button
+                class="seat px-1 py-1 lg:px-6 lg:py-4 rounded-2xl bg-slate-500 flex justify-center items-center"><img
                   src="images/steering-wheel.png" alt=""></button>
 
             </div>
-            <div class="text-lg font-inter font-semibold flex justify-between items-center gap-2  mt-5 mx-auto">
+            <div class="text-lg font-inter font-semibold flex justify-between items-center gap-1  mt-5 mx-auto">
               <button class=" lg:px-7 lg:py-4 rounded-xl  flex justify-center items-center">A</button>
               <button id="A1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>A1</span></button>
               <button id="A2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>A2</span></button>
+                class="seat px-2 py-2 mr-3 md:mr-6 lg:mr-16 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>A2</span></button>
               <button id="A3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>A3</span></button>
               <button id="A4"
@@ -369,7 +380,7 @@
               <button id="B1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>B1</span></button>
               <button id="B2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>B2</span></button>
+                class="seat px-2 mr-3 md:mr-6 lg:mr-16 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>B2</span></button>
               <button id="B3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>B3</span></button>
               <button id="B4"
@@ -381,7 +392,7 @@
               <button id="C1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>C1</span></button>
               <button id="C2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>C2</span></button>
+                class="seat px-2 mr-3 md:mr-6 lg:mr-16 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>C2</span></button>
               <button id="C3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>C3</span></button>
               <button id="C4"
@@ -393,7 +404,7 @@
               <button id="D1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>D1</span></button>
               <button id="D2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>D2</span></button>
+                class="seat px-2 py-2 mr-3 md:mr-6 lg:mr-16  lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>D2</span></button>
               <button id="D3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>D3</span></button>
               <button id="D4"
@@ -405,7 +416,7 @@
               <button id="E1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>E1</span></button>
               <button id="E2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>E2</span></button>
+                class="seat px-2 py-2 mr-3 md:mr-6 lg:mr-16 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>E2</span></button>
               <button id="E3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>E3</span></button>
               <button id="E4"
@@ -417,7 +428,7 @@
               <button id="F1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>F1</span></button>
               <button id="F2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>F2</span></button>
+                class="seat px-2 py-2 mr-3 md:mr-6 lg:mr-16 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>F2</span></button>
               <button id="F3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>F3</span></button>
               <button id="F4"
@@ -430,7 +441,7 @@
               <button id="G1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>G1</span></button>
               <button id="G2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>G2</span></button>
+                class="seat px-2 py-2 mr-3 md:mr-6 lg:mr-16 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>G2</span></button>
               <button id="G3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>G3</span></button>
               <button id="G4"
@@ -442,7 +453,7 @@
               <button id="H1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>H1</span></button>
               <button id="H2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>H2</span></button>
+                class="seat px-2 py-2 mr-3 md:mr-6 lg:mr-16 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>H2</span></button>
               <button id="H3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>H3</span></button>
               <button id="H4"
@@ -454,7 +465,7 @@
               <button id="I1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>I1</span></button>
               <button id="I2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>I2</span></button>
+                class="seat px-2 py-2 mr-3 md:mr-6 lg:mr-16 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>I2</span></button>
               <button id="I3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>I3</span></button>
               <button id="I4"
@@ -466,7 +477,7 @@
               <button id="J1"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>J1</span></button>
               <button id="J2"
-                class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>J2</span></button>
+                class="seat px-2 py-2 mr-3 md:mr-6 lg:mr-16 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>J2</span></button>
               <button id="J3"
                 class="seat px-2 py-2 lg:px-7 lg:py-4 rounded-xl bg-[#F7F8F8] flex justify-center items-center"><span>J3</span></button>
               <button id="J4"
@@ -475,23 +486,23 @@
           </div>
 
 
-          <div class="p-5 w-full mt-0 lg:border-l-2 lg:border-dashed lg:border-gray-500">
+          <div class="p-5 w-full lg:w-[40%] mt-0 md:border-l-2 lg:border-l-2 lg:border-dashed lg:border-gray-500">
 
 
             <div class="text-2xl font-semibold font-rail">
               Select Your Seat
             </div>
 
-            <hr class="border-dashed my-4">
+            <hr class="border-dashed mx-auto my-4">
 
 
 
             <!-- Seat Added Here -->
 
-            <div class="bg-[#F7F8F8] p-8 rounded-lg">
+            <div class="bg-[#F7F8F8] p-5  rounded-lg">
               <div class="flex justify-between">
                 <div class="font-semibold">Seat <span id="seat-count"
-                    class="text-white p-2 rounded-lg bg-[#1DD100]">0</span>
+                    class="text-white py-1 px-2 rounded-lg bg-[#1DD100]">0</span>
                 </div>
                 <div class="font-semibold">Class</div>
                 <div class="font-semibold">Price</div>
@@ -526,9 +537,10 @@
 
               <div id="coupon-container" class="w-full mt-4 gap-4 lg:gap-0 flex flex-col lg:flex-row">
 
-                <input id="coupon-input-field" class="px-2 py-5 rounded-2xl input-bordered bg-white  w-full "
+                <input id="coupon-input-field"
+                  class="p-3 py-4 rounded-2xl lg:rounded-l-2xl input-bordered bg-white  w-full "
                   placeholder="Have any coupon?" disabled />
-                <button id="apply-button" class="px-2 py-5 rounded-md bg-[#1DD100] text-white font-bold " disabled>
+                <button id="apply-button" class="px-2 py-4 rounded-2xl lg:rounded-r-2xl  border-2 font-bold " disabled>
                   Apply
                 </button>
 
@@ -545,13 +557,13 @@
                 <h3 class="font-semibold">
                   Passenger Name*
                 </h3>
-                <input id="input-name" class="p-6 w-full rounded-2xl" type="text" placeholder="Enter your name">
+                <input id="input-name" class="pl-3 py-4 w-full rounded-xl" type="text" placeholder="Enter your name">
               </div>
               <div class="mt-4">
                 <h3 class="font-semibold">
                   Phone Number*
                 </h3>
-                <input id="input-mobile" class="p-6 w-full rounded-2xl" type="number"
+                <input id="input-mobile" class="pl-3 py-4 w-full rounded-xl" type="number"
                   placeholder="Enter your phone number">
               </div>
 
@@ -559,7 +571,8 @@
                 <h3 class="font-semibold">
                   Email ID
                 </h3>
-                <input id="input-name" class="p-6 w-full rounded-2xl" type="email" placeholder="Enter your email id">
+                <input id="input-name" class="pl-3 py-4 w-full rounded-xl" type="email"
+                  placeholder="Enter your email id">
               </div>
 
               <!-- button next -->
@@ -567,8 +580,7 @@
 
               <div class="w-full">
                 <button onclick="purchesConfirm()" id="next-button"
-                  class="py-4 mt-4 w-full bg-[#1DD100] rounded-2xl text-xl font-extrabold text-white"
-                  disabled>Next</button>
+                  class="py-4 mt-4 font-rail w-full rounded-2xl text-xl font-extrabold border-2" disabled>Next</button>
               </div>
 
               <dialog id="my_modal_4" class="modal">
